@@ -94,7 +94,19 @@ bottomContentP[0].textContent = siteContent ['main-content']['services-content']
 bottomContentP[1].textContent = siteContent ['main-content']['product-content'];
 bottomContentP[2].textContent = siteContent ['main-content']['vision-content'];
 
+const contactContact = document.querySelector('.contact h4');
+contactContact.textContent = siteContent['contact']['contact-h4'];
+
+const contactP = document.querySelectorAll('.contact p');
+
+let addressP = siteContent["contact"]["address"].split(" ");
+addressP.splice(4, 0, "\r\n");
+
+// contactP[0].textContent = siteContent ['contact']['address'];
+contactP[0].innerText = addressP.join(' ');
+contactP[1].textContent = siteContent ['contact']['phone'];
+contactP[2].textContent = siteContent ['contact']['email'];
 
 
 const copyrightText = document.querySelector('footer');
-copyrightText.textContent = siteContent['footer']['copyright']
+copyrightText.textContent = siteContent['footer']['copyright'];
