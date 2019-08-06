@@ -107,6 +107,5 @@ contactP[0].innerText = addressP.join(' ');
 contactP[1].textContent = siteContent ['contact']['phone'];
 contactP[2].textContent = siteContent ['contact']['email'];
 
-
 const copyrightText = document.querySelector('footer');
 copyrightText.textContent = siteContent['footer']['copyright'];
